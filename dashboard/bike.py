@@ -50,7 +50,7 @@ st.pyplot(fig)
 
 @st.cache_data
 def load_data():
-    day_df = pd.read_csv("../data/day.csv")  # Ganti dengan lokasi file dataset
+    day_df = pd.read_csv("data/day.csv")  # Ganti dengan lokasi file dataset
     day_df["dteday"] = pd.to_datetime(day_df["dteday"])
     day_df["week"] = day_df["dteday"].dt.isocalendar().week
     day_df["year"] = day_df["dteday"].dt.year
