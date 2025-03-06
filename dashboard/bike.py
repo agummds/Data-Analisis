@@ -5,7 +5,7 @@ import seaborn as sns
 
 # Load dataset
 day_df = pd.read_csv("data/day.csv")
-hour_df = pd.read_csv("/data/hour.csv")
+hour_df = pd.read_csv("data/hour.csv")
 
 # Dashboard title
 st.title("Dashboard Penyewaan Sepeda :bike:")
