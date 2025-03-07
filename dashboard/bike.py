@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 # Load dataset
 day_df = pd.read_csv("https://raw.githubusercontent.com/agummds/Data-Analisis/master/data/day.csv")
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
-time_df = pd.read_csv("https://raw.githubusercontent.com/agummds/Data-Analisis/master/data/hour.csv")
+time_df = pd.read_csv("https://raw.githubusercontent.com/agummds/Data-Analisis/master/data/day.csv")
 time_df['dteday'] = pd.to_datetime(time_df['dteday'])
 
 # Streamlit UI
