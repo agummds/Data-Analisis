@@ -21,3 +21,6 @@ cd dashboard
 ```
 streamlit run bike.py
 ```
+- Atau, bisa juga jalankan langsung perintah
+```
+streamlit run dashboard/bike.py
